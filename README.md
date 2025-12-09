@@ -112,15 +112,7 @@ sudo apt install -y borgbackup
 ```bash
 # Clone or download PULSE files to a directory
 git clone https://github.com/danielnoelle/pulse.linux.git
-cd ~/pulse
-
-# Copy all PULSE files here:
-# - pulse.py
-# - apt_manager.py
-# - commands.py
-# - config.py
-# - tweaks.py
-# - ui_helpers.py
+cd pulse.linux
 ```
 
 ### Step 3: Set Permissions
@@ -139,7 +131,6 @@ chmod 644 *.py
 # Run PULSE
 python3 pulse.py
 
-# Or if you created desktop entry, launch from application menu
 ```
 
 ---
@@ -150,7 +141,7 @@ python3 pulse.py
 
 1. **Launch PULSE**: Run `python3 pulse.py` from terminal
 2. **Grant Permissions**: When prompted, enter your password for system operations
-3. **Wait for Initialization**: PULSE will scan installed packages (may take 30-60 seconds)
+3. **Wait for Initialization**: PULSE will scan installed packages (may take 1-10 seconds)
 4. **Select Module**: Choose between INSTALL, TWEAKS, or MONITOR modules
 
 ### Basic Workflow
@@ -748,5 +739,6 @@ For issues, questions, or suggestions, please:
 4. Contact development team with detailed information
 
 **Happy System Administration! 🚀**
+
 
 
