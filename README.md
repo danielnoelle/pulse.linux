@@ -133,27 +133,7 @@ chmod +x pulse.py
 chmod 644 *.py
 ```
 
-### Step 4: Create Desktop Entry (Optional)
-
-```bash
-# Create desktop entry for easy access
-cat > ~/.local/share/applications/pulse.desktop << 'EOF'
-[Desktop Entry]
-Name=PULSE
-Comment=Package Utilities & Linux System Engine
-Exec=/usr/bin/python3 /path/to/pulse.py
-Icon=system-software-install
-Terminal=false
-Type=Application
-Categories=System;Settings;PackageManager;
-EOF
-
-# Update path in the file
-sed -i "s|/path/to|$PWD|" ~/.local/share/applications/pulse.desktop
-chmod +x ~/.local/share/applications/pulse.desktop
-```
-
-### Step 5: First Run
+### Step 4: First Run
 
 ```bash
 # Run PULSE
@@ -768,3 +748,4 @@ For issues, questions, or suggestions, please:
 4. Contact development team with detailed information
 
 **Happy System Administration! 🚀**
+
